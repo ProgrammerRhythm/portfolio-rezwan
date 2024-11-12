@@ -1,6 +1,8 @@
 body{
     background: white;
     font-family: Geist;
+    overflow-x: hidden;
+    margin: 12px;
 }
 .navbar {
     display: flex;
@@ -75,6 +77,9 @@ body{
     .book-call {
       display: none; /* Hide call button on small screens */
     }
+    .animated-button {
+        display: none; 
+      }
   }
    /* Button Styles */
    .animated-button {
@@ -124,11 +129,12 @@ body{
   .animated-button:hover .icon {
     transform: translateX(-120px); /* Move icon to the left of the text */
   }
-.header{
-    background: url(../assets/Background.png) no-repeat;
+  .header {
+    background: url(../assets/Background.png) no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100%;
     margin-top: 10px;
-    padding-top: 30px;
+    padding-top: 25px;
+    border-radius: 15px;
 }
