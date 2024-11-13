@@ -109,11 +109,12 @@ body{
     height: 25px;
     fill: white;
     transition: transform 0.4s ease;
+    margin-right: 10px;
   }
 
   /* Position text and icon */
   .text {
-    margin-right: 5px;
+    margin-right: 0;
     transition: transform 0.4s ease;
   }
 
@@ -123,11 +124,11 @@ body{
 
   /* Hover Effect */
   .animated-button:hover .text {
-    transform: translateX(30px); /* Move text slightly to the right */
+    transform: translateX(-40px); /* Move text slightly to the right */
   }
 
   .animated-button:hover .icon {
-    transform: translateX(-120px); /* Move icon to the left of the text */
+    transform: translateX(120px); /* Move icon to the left of the text */
   }
   .header {
     background: url(../assets/Background.png) no-repeat center center;
@@ -137,4 +138,44 @@ body{
     margin-top: 10px;
     padding-top: 25px;
     border-radius: 15px;
+}
+.HomeConmonent{
+  text-align: center;
+  margin-top: 110px;
+}
+
+.HomeP{
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.styleD {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 1); /* Light gray border */
+  border-radius: 25px;
+  padding: 5px;
+  width: 340px;
+  margin-bottom: 35px;
+}
+
+.highlight {
+  color: rgba(93, 143, 241, 1); /* Blue color */
+  background-color: #ffffff; /* Light blue background for text */
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 19px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.Ptext {
+  color: #212121; /* Dark text color */
+  font-weight: 300;
+  font-size: 20px;
 }
