@@ -2,11 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import './style.css'
+import HomeAnimation1 from "../assets/HomeAnimationPic1.png"
+import HomeAnimation2 from "../assets/HomeAnimationPic2.png"
+import HomeAnimation3 from "../assets/HomeAnimationPic3.png"
 const Header = () => {
     return (
         <div className="header">
             <Navbar></Navbar>
             <HomeComponent></HomeComponent>
+            <ImgChanger></ImgChanger>
         </div>
     );
 };      
@@ -14,7 +18,6 @@ const Header = () => {
 
 
 function HomeComponent(){
-    const [isOpen, setIsOpen] = useState(false);
   
 
 
@@ -37,6 +40,67 @@ function HomeComponent(){
         </div>
     )
 }
+
+
+
+
+
+function ImgChanger(){
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const slides = [
+        HomeAnimation1,HomeAnimation2,HomeAnimation3
+    ];
+  
+    // Auto transition effect
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+      }, 2000); // change slide every 2 seconds
+      return () => clearInterval(timer); // Cleanup timer on unmount
+    }, [slides.length]);
+  
+    // const goToSlide = (index) => {
+    //   setCurrentSlide(index);
+    // };
+    return (
+        <div className='imgBoxAnimation'>
+            <div className="showreel-container">
+          <div className="showreel-container__inner">
+            <div className="slider no-select w-slider" aria-label="carousel">
+              <div className="mask w-slider-mask">
+                {slides.map((src, index) => (
+                  <div
+                    className={`slide w-slide ${currentSlide === index ? 'active' : ''}`}
+                    key={index}
+                    style={{ transform: `translateX(${-(currentSlide * 100)}%)` }}
+                  >
+                    <img
+                      src={src}
+                      alt={`slide-${index}`}
+                      className="showreel-img img-fluid"
+                      loading="lazy"
+                      sizes="100vw"
+                      srcSet={src}
+                    />
+                  </div>
+                ))}
+              </div>
+    
+              {/* Navigation Arrows */}
+             
+              
+    
+             
+            </div>
+          </div>
+        </div>
+        </div>
+      );
+    };
+    
+
+
+
 
 
 export default Header;
