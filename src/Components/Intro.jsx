@@ -16,27 +16,27 @@ const Intro = () => {
                     <h3 className="IntorH">In today&lsquo;s digital landscape, your brand and user experience are the cornerstones of success. We offer a comprehensive suite of services, encompassing both Web & App UI/UX design and branding, to help you.</h3>
                 </div>
             </div>
-            <div className="row">
+            <div className="row BoxProduct">
                 
-                <div className="col-3 imgSbox">
+                <div className="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3 col-xxl-3 imgSbox">
                 <img src={icon2} alt="" />
-                    <h5>Customer Centricity</h5>
-                    <p>Prioritizes understanding and exceeding customer expectations. </p>
+                    <h5 className="Sintro">Customer Centricity</h5>
+                    <p className='Spara'>Prioritizes understanding and exceeding customer expectations. </p>
                 </div>
-                <div className="col-3 imgSbox">
+                <div className="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3 col-xxl-3  imgSbox">
                 <img src={icon3} alt="" />
-                    <h5>Innovation & Creativity</h5>
-                    <p>Encourages exploring new ideas, embracing challenges.</p>
+                    <h5 className="Sintro">Innovation & Creativity</h5>
+                    <p className='Spara'>Encourages exploring new ideas, embracing challenges.</p>
                 </div>
-                <div className="col-3 imgSbox">
+                <div className="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3 col-xxl-3  imgSbox">
                 <img src={icon4} alt="" />
-                    <h5>Collaboration</h5>
-                    <p>Highlights the value of working well to achieve common objectives.</p>
+                    <h5 className="Sintro">Collaboration</h5>
+                    <p className='Spara'>Highlights the value of working well to achieve common objectives.</p>
                 </div>
-                <div className="col-3 imgSbox">
+                <div className="col-12	col-sm-12	col-md-6	col-lg-6	col-xl-3 col-xxl-3  imgSbox">
                     <img src={icon1} alt="" />
-                    <h5>Transparency</h5>
-                    <p>Focuses on conducting business with honesty and ethical standards.</p>
+                    <h5 className="Sintro">Transparency</h5>
+                    <p className='Spara'>Focuses on conducting business with honesty and ethical standards.</p>
                 </div>
             </div>
         </div>
