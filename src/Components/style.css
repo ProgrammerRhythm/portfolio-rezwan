@@ -180,7 +180,77 @@ body{
   font-size: 20px;
 }
 
+.HeaddingB{
+  color: #0F0F19;
+text-align: center;
+font-family: Geist;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 125%; /* 80px */
+letter-spacing: -2.5px;
+}
+.HeaddingW{
+  color: #0F0F19;
+font-family: "Playfair Display";
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%;
+letter-spacing: -2.5px;
+}
+.styleP {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.05);
+  border: 1px solid rgba(255, 255, 255, 1); /* Light gray border */
+  border-radius: 25px;
+  padding: 4px 20px 4px 6px;
+  margin-bottom: 35px;
+}
+.HeadingBox{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.highlightDark {
+  color: #F5F5F5;
+  background: linear-gradient(180deg, #303030 0%, #090A15 100%), #1E1E1E;
+  padding: 5px 12px 5px 12px;
+  border-radius: 15px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 17px;
+}
 
+.OutBoxtext {
+  color: #0F0F19;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+.RecentWorkP{
+  color: rgba(9, 10, 21, 0.70);
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 28.8px */
+letter-spacing: -0.2px;
+opacity: 0.9;
+}
+
+
+.HeadingText{
+  margin-bottom: 72px;
+}
 
 .showreel-container {
   position: relative;
@@ -304,4 +374,102 @@ color: rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, 0.642);
   font-weight: 300;
   font-size: 18px;
+}
+.scroller{
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Trusttext{
+  color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: -1px;
+}
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.image-item {
+  min-width: 150px; /* Adjust image width */
+  margin: 0 10px;
+}
+
+.carousel-image {
+  width: 110px;
+  height: auto;
+}
+.prjBox{
+padding: 16px 16px 16px 56px;
+  border-radius: 48px;
+border: 1px solid rgba(30, 30, 30, 0.10);
+background: #F7F7F7;
+margin-bottom: 40px;
+}
+.ProjectBoxM{
+  padding: 0 148px;
+}
+.logo{
+  margin-bottom: 164px;
+  margin-top: 50px;
+}
+.ProjectHeading{
+  color: #0F0F19;
+font-family: Geist;
+font-size: 58px;
+font-style: normal;
+font-weight: 500;
+line-height: 125%; /* 60px */
+letter-spacing: -2.5px;
+}
+
+.ProjectDetails{
+  color: rgba(9, 10, 21, 0.70);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 28.8px */
+letter-spacing: -0.2px;
+margin-bottom: 40px;
+}
+.DetailsPrj{
+  width: 520px;
+}
+@media (min-width: 1700px) {
+  .ProjectHeading{
+    font-size: 66px;
+  }
+  .DetailsPrj{
+    width: 580px;
+    
+  }
+  .logo{
+    margin-bottom: 230px;
+  }
+}
+
+.sticky-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.sticky-card {
+  position: sticky;
+  top: 100px;
+  background: white;
+  z-index: 1;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.05);
 }
